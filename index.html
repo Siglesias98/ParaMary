@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Amor</title>
-    <link href="./style.css" rel="stylesheet" /> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculación al archivo CSS -->
 </head>
 <body>
-    <!-- Página de Inicio -->
-    <section class="inicio" id="inicio">
-        <h1 class="titulo">Mi Amor</h1>
-        <button class="boton" onclick="deslizar()">Haz click aquí</button>
-    </section>
+
+    <div class="contenedor" id="contenedor">
+        <div class="mi-amor">Mi Amor</div>
+        <button class="boton" onclick="mostrarMensajeFloral()" aria-label="Mostrar mensaje floral">Haz clic aquí</button>
+    </div>
 
     <!-- Sección de la Imagen -->
     <section class="imagen-flor" id="imagen-flor">
         <img src="https://i.pinimg.com/736x/f1/d8/51/f1d85153c33bb9fcf2162a64e4f6685c.jpg" alt="Flor">
     </section>
 
-    <script src="./style.js"> </script> <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script> <!-- Vinculación al archivo JavaScript -->
+    
 </body>
 </html>
