@@ -2,10 +2,12 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth; /* Deslizar suave */
     background-color: #000; /* Fondo negro global */
+    color: white;
+    text-align: center;
 }
 
 /* Sección de la página de inicio */
@@ -20,37 +22,40 @@ body, html {
 
 /* Estilo del título */
 .titulo {
-    font-size: 4rem;
-    color: yellow;
-    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ff9900;
-    animation: brillar 1.5s infinite alternate;
+    font-size: 5rem;
+    color: #FFD700; /* Color amarillo neón */
+    text-shadow: 0 0 20px #FFD700, 0 0 40px #FFEC8B, 0 0 60px #FFFF00;
+    animation: brillar 2s infinite alternate;
 }
 
 /* Animación del brillo del título */
 @keyframes brillar {
     0% {
-        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ff9900;
+        text-shadow: 0 0 20px #FFD700, 0 0 40px #FFEC8B, 0 0 60px #FFFF00;
     }
     100% {
-        text-shadow: 0 0 20px #ffff00, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
+        text-shadow: 0 0 40px #FFD700, 0 0 80px #FFEC8B, 0 0 100px #FFFF00;
     }
 }
 
 /* Estilo del botón */
 .boton {
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 1.5rem;
     color: white;
     background-color: #ff9900;
     border: none;
+    border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(255, 153, 0, 0.5);
 }
 
 /* Efecto hover en el botón */
 .boton:hover {
     background-color: #cc7a00;
+    transform: scale(1.05);
 }
 
 /* Sección de la imagen de la flor */
@@ -63,6 +68,5 @@ body, html {
 }
 
 .imagen-flor img {
-    max-width: 100%;
-    height: auto;
-}
+    max-width: 90%;
+    height
