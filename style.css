@@ -1,0 +1,68 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Deslizar suave */
+    background-color: #000; /* Fondo negro global */
+}
+
+/* Sección de la página de inicio */
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Fondo negro para la sección de inicio */
+}
+
+/* Estilo del título */
+.titulo {
+    font-size: 4rem;
+    color: yellow;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ff9900;
+    animation: brillar 1.5s infinite alternate;
+}
+
+/* Animación del brillo del título */
+@keyframes brillar {
+    0% {
+        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ff9900;
+    }
+    100% {
+        text-shadow: 0 0 20px #ffff00, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
+    }
+}
+
+/* Estilo del botón */
+.boton {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #ff9900;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Efecto hover en el botón */
+.boton:hover {
+    background-color: #cc7a00;
+}
+
+/* Sección de la imagen de la flor */
+.imagen-flor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Fondo negro para la sección de la flor */
+}
+
+.imagen-flor img {
+    max-width: 100%;
+    height: auto;
+}
