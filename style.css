@@ -3,10 +3,10 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black; /* Fondo negro global */
+    background-color: black;
     color: white;
     text-align: center;
-    scroll-behavior: smooth; /* Desplazamiento suave */
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -20,14 +20,14 @@ body, html {
     background-color: black;
 }
 
-.mi-amor {
-    font-size: 100px;
-    color: yellow;
+.titulo {
+    font-size: 80px;
+    color: gold;
     text-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
-    animation: parpadeo 1.5s infinite alternate;
+    animation: brillar 1.5s infinite alternate;
 }
 
-@keyframes parpadeo {
+@keyframes brillar {
     0% { opacity: 1; }
     100% { opacity: 0.7; }
 }
@@ -37,7 +37,7 @@ body, html {
     padding: 15px 30px;
     font-size: 20px;
     background-color: yellow;
-    color: black; /* Texto negro para contraste en el botón amarillo */
+    color: black;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -55,12 +55,12 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; /* Fondo negro */
+    background-color: black;
 }
 
 .imagen-flor img {
     max-width: 90%;
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: auto;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
