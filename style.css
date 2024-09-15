@@ -22,7 +22,7 @@ body, html {
 .titulo {
     font-size: 80px;
     color: gold;
-    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow; /* Efecto de brillo neón */
     animation: parpadeo 1.5s infinite alternate; /* Efecto de parpadeo */
 }
 
