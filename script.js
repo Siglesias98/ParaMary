@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Función para deslizar suavemente hacia la sección de la flor
-    function deslizarPagina() {
-        document.getElementById("imagen-flor").scrollIntoView({ behavior: "smooth" });
-    }
+    const boton = document.getElementById("boton");
+    const imagenFlor = document.getElementById("imagen-flor");
 
-    // Agregar el event listener al botón para ejecutar la función cuando se haga clic
-    document.querySelector(".boton").addEventListener("click", deslizarPagina);
+    boton.addEventListener("click", function() {
+        // Deslizar hacia abajo
+        imagenFlor.scrollIntoView({ behavior: "smooth" });
+        
+        // Mostrar la imagen después de deslizar
+        setTimeout(function() {
+            imagenFlor.style.display = "flex";
+        }, 500); // Ajusta el tiempo de retraso si es necesario
+    });
 });
