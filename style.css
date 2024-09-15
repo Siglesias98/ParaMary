@@ -3,10 +3,10 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: black; /* Fondo negro */
     color: white;
     text-align: center;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Desplazamiento suave */
     overflow-x: hidden;
 }
 
@@ -17,17 +17,16 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
 }
 
 .titulo {
     font-size: 80px;
     color: gold;
-    text-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
-    animation: brillar 1.5s infinite alternate;
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+    animation: parpadeo 1.5s infinite alternate; /* Efecto de parpadeo */
 }
 
-@keyframes brillar {
+@keyframes parpadeo {
     0% { opacity: 1; }
     100% { opacity: 0.7; }
 }
@@ -55,7 +54,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: black; /* Fondo negro */
+    display: none; /* Inicialmente oculta */
 }
 
 .imagen-flor img {
