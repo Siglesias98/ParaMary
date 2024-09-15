@@ -1,14 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const boton = document.getElementById("boton");
-    const imagenFlor = document.getElementById("imagen-flor");
+    // Función para deslizar hacia abajo
+    function deslizarPagina() {
+        document.getElementById("imagen-flor").scrollIntoView({ behavior: "smooth" });
+        mostrarFlor(); // Mostrar la imagen después de deslizar
+    }
 
-    boton.addEventListener("click", function() {
-        // Deslizar hacia abajo
-        imagenFlor.scrollIntoView({ behavior: "smooth" });
-        
-        // Mostrar la imagen después de deslizar
-        setTimeout(function() {
-            imagenFlor.style.display = "flex";
-        }, 500); // Ajusta el tiempo de retraso si es necesario
-    });
+    // Mostrar la imagen de la flor
+    function mostrarFlor() {
+        const imagenFlor = document.getElementById("imagen-flor");
+        setTimeout(() => {
+            imagenFlor.style.display = 'flex'; // Mostrar la imagen después de deslizar
+        }, 500); // Delay de 500ms para asegurar que la página haya terminado de deslizarse
+    }
+
+    // Vinculación del botón a la función de deslizar
+    document.querySelector(".boton").addEventListener("click", deslizarPagina);
 });
